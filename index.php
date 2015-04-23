@@ -1,14 +1,22 @@
 <html>
 <head>
 	<title></title>
-
+<script type="text/javascript" src="disk/js/jq.js"></script>
+<link rel="stylesheet" type="text/css" href="font-aw/css/font-awesome.css">
 <style type="text/css">
-
 *{
 	margin: 0px;
 }
 body{
 	background-color: rgb(241, 241, 241);
+}
+@font-face{
+	font-family: yuan;
+	src: url(font-aw/fonts/Aaargh.ttf);
+}
+@font-face{
+	font-family: yuanbebas;
+	src: url(font-aw/fonts/bebas.ttf);
 }
 nav{
 	float: left;
@@ -57,19 +65,73 @@ nav{
 	float: left;
 	width: 50%;
 }
-
-.input{
+.col-left-2{
+	padding: 7px;
+	float: left;
+	width: 25%;
+}
+input{
 
 	border: 1px solid #D8D8D8;
 }
+.input-search{
+	padding-right: 40px;
+}
 .search{
-
+	margin-left: -31px;
+	outline: none;
 	}
 .center{
 	float: none;
 	margin-right: auto;
 	margin-left: auto;
+
 }
+.btn{
+	background-color: #fff;
+	border: 1px solid #D8D8D8;
+	height: 31px;
+	
+}
+.btn:hover{
+	background-color: #D8D8D8;
+}
+.h-center{
+	margin-top: 5px;
+
+}
+
+/*nav hr 2*/
+.ul-ver{
+	list-style: none;
+
+}
+.ul-ver li{
+	display: inline;
+	padding: 7px;
+	margin-left: -13px;
+	float: left;
+	width: 12.5%;
+	margin-top: -8px;
+	font-family: yuan;
+	font-size: 12px;
+	font-weight: bold;
+
+	text-align: center;
+	
+}
+
+a{
+	color:#424242;
+}
+.ul-ver li:hover{
+	
+	border-bottom: 2px solid #00BFFF;
+}
+.ul-ver li a{
+	text-decoration: none;
+}
+
 </style>
 
 </head>
@@ -85,9 +147,21 @@ nav{
 		<!-- log menu -->
 		<div id="log-menu"></div>
 		<!-- hr menu -->
-		<div class="col-left-5 ">
-			<input type="text" class=" col-left-7 input search">
-			<button class="">Search</button>
+		<div class="col-left-7 center h-center">
+			<input type="text" class=" col-left-7 input-search ">
+			<button class="btn search"><i class="fa fa-search fa-lg"></i></button>
+		</div>
+		<!-- hr menu 2 -->
+		<div class="col-left-7 center">
+			<ul class="ul-ver">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">SEMA</a></li>
+				<li><a href="#">HIMA</a></li>
+				<li><a href="#">UKM</a></li>
+				<li><a href="#">Komunitas</a></li>
+			</ul>
+
+
 		</div>
 
 	</nav>
