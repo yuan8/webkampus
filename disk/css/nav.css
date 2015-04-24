@@ -1,0 +1,31 @@
+.ul-ver:hover #sub1{
+    display: block;
+    -webkit-animation:submenu 1s linear;
+}
+@-webkit-keyframes submenu{
+    0%{transform:rotate:-30deg;}
+    100%{transform:rotate:0deg;}
+}
+.submenu {
+border: 1px solid #d8d8d8;
+position: absolute;
+width: 160px;
+padding: 0px;
+margin-top: 10px;
+display: none;
+}
+.submenu li{
+    width: 100%;
+    height:30px;
+    padding-top: 20px;
+    padding-bottom: -20px;
+    font-family:arial;
+    background-color: #fff;
+    float: left;
+    perspective: 500px;
+    border-bottom: 1px solid #d8d8d8;
+}
+.submenu li:hover{
+    color:coral;
+
+}
